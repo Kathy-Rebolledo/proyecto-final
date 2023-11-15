@@ -1,0 +1,44 @@
+@import '../base/fonts';
+
+/* Header */
+header {
+    background-color: $header-bc;
+    position: sticky;
+    top: 0px;
+    box-shadow: $box-shadow;
+    z-index: 1;
+
+    /* Logo de la empresa */
+    /* Icono toggler */
+
+    .navbar-brand img {
+        width: 200px;
+        margin-left: -20px;
+        margin-top: -10px;
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .navbar-toggler {
+        border: none;
+        &:focus {
+            box-shadow: none;
+        }
+    }
+    .collapse {
+        margin-right: 10px;
+        .nav-item{
+            font-size: 1.2rem;
+            font-weight: 600;
+            .nav-link:hover{
+                color: $color-hover;
+            }
+        }
+    }
+    a.nav-link {
+        color: $color-header;
+        font-family: $font-family;
+        font-size: 1.3rem;
+    }
+}

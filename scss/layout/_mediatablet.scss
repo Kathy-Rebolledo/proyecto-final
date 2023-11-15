@@ -1,0 +1,187 @@
+@import '../base/fonts';
+
+/* Tablet */
+ @media only screen and (min-width: 481px) and (max-width: 766px) {
+/*Conoce Chile */
+  .conoce-chile-banner {
+    div {
+      h1 {
+        font-size: 2.7rem;
+      }
+    }
+  }
+  .section-container {
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    img {
+      height: 300px;
+      width: 400px;
+      margin-top: -40px;
+      margin-left: 20px;
+      margin-right: 40px;
+    }
+    h3{
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+    p{
+      margin-left: 20px;
+    }
+  }
+
+
+    /* Actividades de Verano */
+    .verano .grid-container-verano {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Actividades de Invierno */
+    .invierno .grid-container-invierno {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+    }
+
+/*Footer*/
+ footer {
+  .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo {
+    img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+    }
+  }
+  .redes {
+    margin-top: 25px;
+
+  }
+  .suscripcion{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+ }
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+/*Conoce Chile */
+  .section-container {
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: flex-end;
+    align-items: center;
+    height: 300px;
+    img {
+        height: 200px;
+        width: 300px;
+        margin-left: -50px;
+        margin-right: 40px;
+    }
+    h3{
+      margin-top: 15px;
+    }
+    p {
+        margin-right: 20px;
+    }
+  }
+    
+    /* Actividades de Verano */
+    .verano .grid-container-verano {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Actividades de Invierno */
+    .invierno .grid-container-invierno {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+/*Footer*/
+  footer {
+    .container-footer {
+      display: flex;
+      flex-direction: row;
+    }
+    .logo {
+      img {
+        margin-left: -20px;
+      }
+      p {
+        margin-left: 20px;
+      }
+    }
+    .redes {
+      margin-top: -90px;
+      margin-left: 100px;
+      img {
+        margin-bottom: 20px;
+        padding: 1px;
+        width: 40px;
+      }
+    }
+    .suscripcion{
+      margin-top: 5px;
+      margin-left: 100px;
+    }
+  }
+} 
+
+@media only screen and (min-width: 809px) and (max-width: 1023px) {
+/*Footer*/
+  footer {
+    .container-footer {
+      display: flex;
+      flex-direction: row;
+    }
+    .logo {
+      img {
+        margin-left: -20px;
+      }
+      p {
+        margin-left: 20px;
+      }
+    }
+    .redes {
+      margin-top: -30px;
+      margin-left: 100px;
+      img {
+          margin-bottom: 20px;
+          padding: 1px;
+          width: 40px;
+      }
+    }
+    .suscripcion{
+      margin-top: 5px;
+      margin-left: 100px;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+@import'../base/fonts';
+
+/*contacto.html*/
+.contactobanner {
+    background-image: url(../media/puyehue-2.jpg);
+    background-position: top;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    h1 {
+        font-size: 4rem;
+        border-radius: 10px;
+        text-shadow: -1px -1px 11px rgba(184, 188, 185, 0.535);
+        padding: 10px;
+        background-color: rgba(147, 150, 150, 0.395);
+        font-weight: 650;
+        font-family: $font-family;
+    }
+} 

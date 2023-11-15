@@ -1,0 +1,27 @@
+//import reset
+@import'base/reset';
+
+//import header
+@import'layout/header';
+
+
+//import section-principal hmtl
+@import'layout/section-principal';
+
+//import pages
+@import'layout/conoce-chile';
+@import'layout/actividades';
+@import'layout/parques-nacionales';
+@import'layout/contacto';
+
+//import footer
+@import'layout/footer';
+
+//import media query
+@import'layout/mediamobile';
+@import'layout/mediatablet';
+//@import'layout/mediadesktop';
+
+
+
+

@@ -1,0 +1,607 @@
+/*Selector Universal*/
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Header */
+header {
+  background-color: #00c19d;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 7px 20px -10px #616161;
+  z-index: 1;
+  /* Logo de la empresa */
+  /* Icono toggler */
+}
+header .navbar-brand img {
+  width: 200px;
+  margin-left: -20px;
+  margin-top: -10px;
+  transition: 0.5s;
+}
+header .navbar-brand img:hover {
+  transform: scale(1.2);
+}
+header .navbar-toggler {
+  border: none;
+}
+header .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .collapse {
+  margin-right: 10px;
+}
+header .collapse .nav-item {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+header .collapse .nav-item .nav-link:hover {
+  color: #e0f5ee;
+}
+header a.nav-link {
+  color: #12221d;
+  font-family: "Lato", sans-serif;
+  font-size: 1.3rem;
+}
+
+/* Home */
+.home-Banner {
+  background-image: url(../media/los-lagos-volcan-osorno.jpg);
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-Banner h1 {
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  width: 90%;
+  font-size: 2.5rem;
+  margin-left: 20px;
+  color: rgb(38, 38, 38);
+  font-weight: 600;
+}
+.home-Banner p {
+  font-family: "Lato", sans-serif;
+  color: rgb(38, 38, 38);
+  font-size: 1.2rem;
+  background-color: rgba(220, 217, 217, 0.788);
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 20px -10px #616161;
+  margin-left: 20px;
+  margin-bottom: 60px;
+}
+
+.recomendaciones {
+  margin-left: 20px;
+  font-family: "Lato", sans-serif;
+  color: rgb(38, 38, 38);
+}
+.recomendaciones h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.recomendaciones .nav {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.recomendaciones a.nav-link {
+  color: #616161;
+}
+.recomendaciones a.nav-link:hover, .recomendaciones a.nav-link:focus {
+  color: rgb(38, 38, 38);
+}
+.recomendaciones a.nav-link .active {
+  color: rgb(38, 38, 38);
+}
+.recomendaciones .cards {
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-right: 15px;
+}
+.recomendaciones .cards .card img {
+  width: 100%;
+  height: 100%;
+}
+.recomendaciones .cards .card h5 {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/*Conoce Chile*/
+.conoce-chile-banner div h1 {
+  margin-top: 3rem;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-family: "Lato", sans-serif;
+}
+.conoce-chile-banner div img {
+  margin-bottom: 1rem;
+  display: block;
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+}
+.conoce-chile-banner .texto {
+  padding: 20px;
+}
+.conoce-chile-banner .texto h2 {
+  font-size: 2rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(38, 38, 38);
+}
+.conoce-chile-banner .texto p {
+  font-size: 1rem;
+  font-family: "Lato", sans-serif;
+  color: rgb(38, 38, 38);
+  margin-bottom: 50px;
+}
+
+.section-container {
+  color: rgb(38, 38, 38);
+  background-color: #e0f5ee;
+  margin-left: 300px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 20px;
+}
+
+.section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-items: flex-end;
+  align-items: center;
+  height: 450px;
+}
+.section img {
+  height: 350px;
+  width: 450px;
+  margin-left: -200px;
+  margin-right: 40px;
+  border-radius: 20px;
+}
+.section p {
+  margin-right: 20px;
+}
+
+/*Actividades de Verano*/
+.verano-Banner {
+  background-image: url(../media/los-lagos-chiloe.jpg);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.verano h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.55rem;
+  margin-bottom: 15px;
+  font-weight: 650;
+}
+.verano img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.388);
+}
+.verano .grid-container-verano {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 30px;
+  row-gap: 45px;
+  margin: 45px 65px 45px;
+  /* Verano flexbox */
+}
+.verano .grid-container-verano .verano1, .verano .grid-container-verano .verano2, .verano .grid-container-verano .verano3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.verano .grid-container-verano .verano1 img, .verano .grid-container-verano .verano2 img, .verano .grid-container-verano .verano3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.verano .grid-container-verano .verano2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.verano .grid-container-verano .verano3 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*Actividades de Invierno*/
+.invierno-Banner {
+  background-image: url(../media/san-pedro-de-atacama-laguna-miscanti.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  left: 200px;
+  align-items: left;
+}
+
+.invierno h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.55rem;
+  margin-bottom: 15px;
+  font-weight: 650;
+}
+.invierno img {
+  border-radius: 10px;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.388);
+}
+.invierno .grid-container-invierno {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto;
+  column-gap: 30px;
+  row-gap: 45px;
+  margin: 45px 65px 45px;
+  /* Verano flexbox */
+}
+.invierno .grid-container-invierno .invierno1, .invierno .grid-container-invierno .invierno2, .invierno .grid-container-invierno .invierno3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.invierno .grid-container-invierno .invierno1 img, .invierno .grid-container-invierno .invierno2 img, .invierno .grid-container-invierno .invierno3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.invierno .grid-container-invierno .invierno2 img {
+  width: 100%;
+  height: 100%;
+}
+
+.invierno .grid-container-invierno .invierno3 img {
+  width: 100%;
+  height: 100%;
+}
+
+/*contacto.html*/
+.contactobanner {
+  background-image: url(../media/puyehue-2.jpg);
+  background-position: top;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+.contactobanner h1 {
+  font-size: 4rem;
+  border-radius: 10px;
+  text-shadow: -1px -1px 11px rgba(184, 188, 185, 0.535);
+  padding: 10px;
+  background-color: rgba(147, 150, 150, 0.395);
+  font-weight: 650;
+  font-family: "Lato", sans-serif;
+}
+
+/* Footer */
+footer .container-footer {
+  background-color: #00c19d;
+  color: #12221d;
+  font-family: "Lato", sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "logo   redes   suscripcion";
+}
+footer .logo {
+  grid-area: logo;
+}
+footer .logo img {
+  width: 180px;
+  padding: 5px;
+  margin-left: -20px;
+}
+footer .logo p {
+  margin-top: 10px;
+  font-weight: 600;
+  font-size: 0.8rem;
+  margin-left: 10px;
+}
+footer .redes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .redes h6 {
+  margin-top: -30px;
+  font-size: x-large;
+}
+footer .redes img {
+  margin-bottom: 20px;
+  padding: 2px;
+  width: 50px;
+  transition: 0.4s;
+}
+footer .redes img:hover {
+  scale: 1.1;
+}
+footer .suscripcion {
+  grid-area: suscripcion;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .suscripcion h6 {
+  margin-top: 15px;
+  font-size: x-large;
+}
+footer .suscripcion .footer-form #email {
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  border-color: 0px 7px 20px -10px #616161;
+  border-style: solid;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+footer .suscripcion .footer-form #enviar {
+  border-width: 0.1rem;
+  padding: 0.5rem;
+  border-style: none;
+  border-radius: 10px;
+  background-color: 0px 7px 20px -10px #616161;
+  margin-bottom: 20px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 480px) {
+  /*Conoce Chile */
+  .conoce-chile-banner div h1 {
+    font-size: 2.8rem;
+  }
+  .section-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+  }
+  .section img {
+    height: 300px;
+    width: 400px;
+    margin-top: -40px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .section h3 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .section p {
+    margin-left: 20px;
+  }
+  /* Actividades de Verano */
+  .verano .grid-container-verano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Actividades de Invierno */
+  .invierno .grid-container-invierno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*Footer*/
+  footer .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  footer .redes {
+    margin-top: 25px;
+  }
+  footer .suscripcion {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* Tablet */
+@media only screen and (min-width: 481px) and (max-width: 766px) {
+  /*Conoce Chile */
+  .conoce-chile-banner div h1 {
+    font-size: 2.7rem;
+  }
+  .section-container {
+    margin-left: 10px;
+    margin-right: 0px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  .section {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+  }
+  .section img {
+    height: 300px;
+    width: 400px;
+    margin-top: -40px;
+    margin-left: 20px;
+    margin-right: 40px;
+  }
+  .section h3 {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .section p {
+    margin-left: 20px;
+  }
+  /* Actividades de Verano */
+  .verano .grid-container-verano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Actividades de Invierno */
+  .invierno .grid-container-invierno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*Footer*/
+  footer .container-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .logo img {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 40px;
+  }
+  footer .redes {
+    margin-top: 25px;
+  }
+  footer .suscripcion {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  /*Conoce Chile */
+  .section-container {
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .section {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-items: flex-end;
+    align-items: center;
+    height: 300px;
+  }
+  .section img {
+    height: 200px;
+    width: 300px;
+    margin-left: -50px;
+    margin-right: 40px;
+  }
+  .section h3 {
+    margin-top: 15px;
+  }
+  .section p {
+    margin-right: 20px;
+  }
+  /* Actividades de Verano */
+  .verano .grid-container-verano {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Actividades de Invierno */
+  .invierno .grid-container-invierno {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /*Footer*/
+  footer .container-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .logo img {
+    margin-left: -20px;
+  }
+  footer .logo p {
+    margin-left: 20px;
+  }
+  footer .redes {
+    margin-top: -90px;
+    margin-left: 100px;
+  }
+  footer .redes img {
+    margin-bottom: 20px;
+    padding: 1px;
+    width: 40px;
+  }
+  footer .suscripcion {
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+}
+@media only screen and (min-width: 809px) and (max-width: 1023px) {
+  /*Footer*/
+  footer .container-footer {
+    display: flex;
+    flex-direction: row;
+  }
+  footer .logo img {
+    margin-left: -20px;
+  }
+  footer .logo p {
+    margin-left: 20px;
+  }
+  footer .redes {
+    margin-top: -30px;
+    margin-left: 100px;
+  }
+  footer .redes img {
+    margin-bottom: 20px;
+    padding: 1px;
+    width: 40px;
+  }
+  footer .suscripcion {
+    margin-top: 5px;
+    margin-left: 100px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
