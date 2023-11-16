@@ -31,7 +31,7 @@ header {
         margin-right: 10px;
         .nav-item{
             font-size: 1.2rem;
-            font-weight: 600;
+            font-weight: $font-1;
             .nav-link:hover{
                 color: $color-hover;
             }

@@ -17,7 +17,7 @@
         font-size: 2.7rem;
         margin-left: 20px;
         color: $principal-color;
-        font-weight: 600;
+        font-weight: $font-1;
     }
     p{
         font-family: $font-family;
@@ -39,7 +39,7 @@
     color: $principal-color;
     h2{
         font-size: 2rem;
-        font-weight: 600;
+        font-weight: $font-1;
         margin-top: 30px;
         margin-bottom: 20px;
     }
@@ -72,7 +72,7 @@
                 margin-top: 20px;
                 margin-left: 5px;
                 margin-bottom: 20px;
-                font-weight: 600;
+                font-weight: $font-1;
                 font-size: 1.5rem;
             }
         }
