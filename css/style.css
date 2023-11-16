@@ -293,31 +293,50 @@ header a.nav-link {
   text-align: left;
 }
 
-.absolute {
-  position: relative;
-  grid-column-start: 1;
-  grid-column-end: 2;
-}
-
 /*contacto.html*/
 .contactobanner {
   background-image: url(../media/los-lagos-puyehue-2.jpg);
-  background-position: top;
   height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-size: cover;
+  margin-bottom: 40px;
 }
 .contactobanner h1 {
   font-size: 4rem;
-  border-radius: 10px;
-  text-shadow: -1px -1px 11px rgba(184, 188, 185, 0.535);
+  border-radius: 15px;
   padding: 10px;
-  background-color: rgba(147, 150, 150, 0.395);
-  font-weight: 650;
+  background-color: rgba(220, 217, 217, 0.788);
+  font-weight: 600;
   font-family: "Lato", sans-serif;
+}
+
+.formulario {
+  padding: 50px;
+  font-family: "Lato", sans-serif;
+  color: rgb(38, 38, 38);
+  font-size: larger;
+}
+.formulario form {
+  background-color: #F2EEE9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 7px 20px -10px #616161;
+  margin-bottom: 40px;
+}
+.formulario .btn {
+  font-size: 100%;
+  color: rgb(38, 38, 38);
+  background-color: #00c19d;
+  border: #00c19d;
+}
+.formulario .btn:hover {
+  color: rgb(38, 38, 38);
+  background-color: #34b193;
+  border: #00c19d;
 }
 
 /* Footer */
@@ -395,6 +414,16 @@ footer .suscripcion .footer-form #enviar {
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
+  /*Home */
+  .home-Banner h1 {
+    font-size: 2.2rem;
+  }
+  .home-Banner p {
+    font-size: 1rem;
+  }
+  .recomendaciones h2 {
+    font-size: 1.7rem;
+  }
   /* Imperdibles Home */
   .imperdibles .grid-container-imperdibles {
     display: flex;
@@ -404,6 +433,9 @@ footer .suscripcion .footer-form #enviar {
   /*Conoce Chile */
   .conoce-chile-banner div h1 {
     font-size: 2.8rem;
+  }
+  .conoce-chile-banner .texto h2 {
+    font-size: 1.6rem;
   }
   .section-container {
     margin-left: 0px;
@@ -416,11 +448,11 @@ footer .suscripcion .footer-form #enviar {
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 600px;
+    height: 500px;
   }
   .section img {
-    height: 300px;
-    width: 400px;
+    height: 200px;
+    width: 300px;
     margin-top: -40px;
     margin-left: 20px;
     margin-right: 40px;
@@ -468,6 +500,10 @@ footer .suscripcion .footer-form #enviar {
     box-shadow: 0px 7px 20px -10px #616161;
     margin-left: 20px;
     margin-bottom: 60px;
+  }
+  /*Contacto */
+  .contactobanner div h1 {
+    font-size: 2.7rem;
   }
   /*Footer*/
   footer .container-footer {
@@ -567,6 +603,10 @@ footer .suscripcion .footer-form #enviar {
     box-shadow: 0px 7px 20px -10px #616161;
     margin-left: 20px;
     margin-bottom: 60px;
+  }
+  /*Contacto */
+  .contactobanner div h1 {
+    font-size: 2.7rem;
   }
   /*Footer*/
   footer .container-footer {

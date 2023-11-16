@@ -4,20 +4,46 @@
 /*contacto.html*/
 .contactobanner {
     background-image: url(../media/los-lagos-puyehue-2.jpg);
-    background-position: top;
     height: 400px;
+    background-size: cover;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-size: cover;
+    margin-bottom: $margin-bottom-footer;
     h1 {
         font-size: 4rem;
-        border-radius: 10px;
-        text-shadow: -1px -1px 11px rgba(184, 188, 185, 0.535);
+        border-radius: 15px;
         padding: 10px;
-        background-color: rgba(147, 150, 150, 0.395);
-        font-weight: 650;
+        background-color: $background-banner;
+        font-weight: $font-1;
         font-family: $font-family;
     }
 } 
+
+.formulario {
+    padding: 50px;
+    font-family: $font-family;
+    color: $principal-color;
+    font-size: larger;
+    form {
+        background-color: #F2EEE9;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: $box-shadow;
+        margin-bottom: 40px;
+
+    }
+    .btn {
+        font-size: 100%;
+        color: $principal-color;
+        background-color: $header-bc;
+        border: $header-bc;
+        &:hover {
+            color: $principal-color;
+            background-color: #34b193;
+            border: $header-bc;
+        }
+    }
+}

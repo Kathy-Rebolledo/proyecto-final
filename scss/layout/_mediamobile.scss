@@ -3,18 +3,38 @@
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
-    /* Imperdibles Home */
-    .imperdibles .grid-container-imperdibles {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
+  /*Home */
+  .home-Banner {
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
+    .recomendaciones {
+      h2 {
+        font-size: 1.7rem;
+      }
+    }
+    
+  /* Imperdibles Home */
+  .imperdibles .grid-container-imperdibles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   /*Conoce Chile */
   .conoce-chile-banner {
     div {
       h1 {
         font-size: 2.8rem;
+      }
+    }
+    .texto {
+      h2 {
+        font-size: 1.6rem;
       }
     }
   }
@@ -29,10 +49,10 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    height: 600px;
+    height: 500px;
     img {
-      height: 300px;
-      width: 400px;
+      height: 200px;
+      width: 300px;
       margin-top: -40px;
       margin-left: 20px;
       margin-right: 40px;
@@ -46,73 +66,82 @@
     }
   }
 
-/* Actividades */
-.card-body-actividades {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.card-body-actividades {
-  .icon {
-    height: 100px;
-    width: 200px;
-    margin-left: 30px;
-    margin-right: 30px;
+  /* Actividades */
+  .card-body-actividades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
-  p {
-    margin-top: 10px;
-    text-align: justify;
+  .card-body-actividades {
+    .icon {
+      height: 100px;
+      width: 200px;
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    p {
+      margin-top: 10px;
+      text-align: justify;
+    }
+    .photo {
+      height: 200px;
+      width: 300px;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
   }
-  .photo {
-    height: 200px;
-    width: 300px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
 
   /*Parques Nacionales*/
   .parques-banner {
-  h1{
-    font-family: $font-family;
-    font-size: 2.7rem;
-    color: $principal-color;
-    font-weight: $font-1;
-    background-color: $background-banner;
-    width: 70%;
-    padding: 10px 20px;
-    border-radius: 15px;
-    box-shadow: $box-shadow;
-    margin-left: 20px;
-    margin-bottom: 60px;
+    h1{
+      font-family: $font-family;
+      font-size: 2.7rem;
+      color: $principal-color;
+      font-weight: $font-1;
+      background-color: $background-banner;
+      width: 70%;
+      padding: 10px 20px;
+      border-radius: 15px;
+      box-shadow: $box-shadow;
+      margin-left: 20px;
+      margin-bottom: 60px;
+    }
   }
-}
 
-/*Footer*/
- footer {
-  .container-footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  /*Contacto */
+  .contactobanner {
+    div {
+      h1 {
+        font-size: 2.7rem;
+      }
+    }
   }
-  .logo {
-    img {
+
+  /*Footer*/
+  footer {
+    .container-footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .logo {
+      img {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40px;
+      }
+    }
+    .redes {
+      margin-top: 25px;
+    }
+    .suscripcion{
+      margin-top: -20px;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-left: 40px;
     }
   }
-  .redes {
-    margin-top: 25px;
-  }
-  .suscripcion{
-    margin-top: -20px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
- }
 } 
