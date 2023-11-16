@@ -1,52 +1,57 @@
 @import '../base/fonts';
+@import '../utilities/variables';
 
-/*Actividades de Verano*/
-.verano-Banner {
-    background-image: url(../media/los-lagos-chiloe.jpg);
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+/*Actividades*/
+.titulo-actividades {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
-  
-  .verano{
-    h3 {
-    font-family: $font-family;
-    font-size: 1.55rem;
-    margin-bottom: 15px;
-    font-weight: 650;
-    }
-    img {
-    border-radius: 10px;
-    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.388);
-    }
-    .grid-container-verano {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    column-gap: 30px;
-    row-gap: 45px;
-    margin: 45px 65px 45px;
-    /* Verano flexbox */
-  
-  .verano1, .verano2, .verano3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
+.tarjeta-actividades-container {
+  margin-bottom: $margin-bottom-footer;
+}
+
+.card-header-actividades {
+  background-color: $color-fondo-2;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.cards-actividades {
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: $box-shadow;
+}
+.card-body-actividades {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  .icon {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+    // object-fit: cover;
+    box-shadow: $box-shadow;
   }
-  .verano1 img, .verano2 img, .verano3 img {
-    width: 100%;
-    height: 100%;
+  p {
+    margin: 20px;
+    color: $principal-color;
+    text-align: justify;
+  }
+  .photo {
+    margin-left: 20px;
+    width: 350px;
+    max-width: 400px;
+    height: 250px;
+    border-radius: 5px;
+    // object-fit: cover;
+    box-shadow: $box-shadow;
   }
 }
-}
-.verano .grid-container-verano .verano2 img {
-    width: 100%;
-    height: 100%;
-  }
-  .verano .grid-container-verano .verano3 img {
-    width: 100%;
-    height: 100%;
-  }
+

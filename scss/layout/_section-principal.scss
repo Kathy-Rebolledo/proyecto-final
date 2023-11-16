@@ -1,4 +1,5 @@
 @import '../base/fonts';
+@import '../utilities/variables';
 
 /* Home */
 .home-Banner {
@@ -13,7 +14,7 @@
         text-align: left;
         font-family: $font-family;
         width: 90%;
-        font-size: 2.5rem;
+        font-size: 2.7rem;
         margin-left: 20px;
         color: $principal-color;
         font-weight: 600;
@@ -37,13 +38,13 @@
     font-family: $font-family;
     color: $principal-color;
     h2{
-        font-size: 1.8rem;
+        font-size: 2rem;
         font-weight: 600;
         margin-top: 30px;
         margin-bottom: 20px;
     }
     .nav {
-        font-size: 1rem;
+        font-size: 1.2rem;
         margin-bottom: 10px;
     }
     a.nav-link {
@@ -57,7 +58,7 @@
         }
     }
     .cards {
-        margin-bottom: 30px;
+        margin-bottom: $margin-bottom-footer;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 15px;
@@ -68,7 +69,7 @@
                 height: 100%;
             }
             h5 {
-                margin-top: 10px;
+                margin-top: 20px;
                 margin-left: 5px;
                 margin-bottom: 20px;
                 font-weight: 600;

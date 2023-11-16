@@ -1,55 +1,47 @@
 @import '../base/fonts';
+@import '../utilities/variables';
 
-/*Actividades de Invierno*/
-.invierno-Banner {
-    background-image: url(../media/san-pedro-de-atacama-laguna-miscanti.jpg);
-    height: 400px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    left: 200px;
-    align-items: left;
+/*Parques Nacionales*/
+.parques-banner {
+  background-image: url(../media/san-pedro-de-atacama-laguna-miscanti.jpg);
+  height: 400px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  margin-bottom: $margin-bottom-footer;
+  h1{
+    margin-top: 100px;
+    font-family: $font-family;
+    font-size: 2.7rem;
+    margin-left: 20px;
+    color: $color-fondo;
+    font-weight: 600;
+  }
 }
-  
-  .invierno{
-    h3 {
+.parques{
+  h3 {
     font-family: $font-family;
     font-size: 1.55rem;
     margin-bottom: 15px;
     font-weight: 650;
-    }
-    img {
+  }
+  img {
     border-radius: 10px;
-    box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.388);
-    }
-    .grid-container-invierno {
+    box-shadow: $box-shadow;
+  }
+  .grid-container-parques {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: auto;
-    column-gap: 30px;
-    row-gap: 45px;
-    margin: 45px 65px 45px;
-    /* Verano flexbox */
-  
-  .invierno1, .invierno2, .invierno3 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  .invierno1 img, .invierno2 img, .invierno3 img {
-    width: 100%;
-    height: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 45px 40px 45px;
+    .parque {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
   }
 }
-}
-.invierno .grid-container-invierno .invierno2 img {
-    width: 100%;
-    height: 100%;
-  }
-  .invierno .grid-container-invierno .invierno3 img {
-    width: 100%;
-    height: 100%;
-  }

@@ -59,7 +59,7 @@ header a.nav-link {
   text-align: left;
   font-family: "Lato", sans-serif;
   width: 90%;
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   margin-left: 20px;
   color: rgb(38, 38, 38);
   font-weight: 600;
@@ -83,13 +83,13 @@ header a.nav-link {
   color: rgb(38, 38, 38);
 }
 .recomendaciones h2 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
   margin-top: 30px;
   margin-bottom: 20px;
 }
 .recomendaciones .nav {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 .recomendaciones a.nav-link {
@@ -102,7 +102,7 @@ header a.nav-link {
   color: rgb(38, 38, 38);
 }
 .recomendaciones .cards {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
@@ -113,7 +113,7 @@ header a.nav-link {
   height: 100%;
 }
 .recomendaciones .cards .card h5 {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: 5px;
   margin-bottom: 20px;
   font-weight: 600;
@@ -155,7 +155,7 @@ header a.nav-link {
   background-color: #e0f5ee;
   margin-left: 300px;
   margin-right: 100px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -180,105 +180,100 @@ header a.nav-link {
   margin-right: 20px;
 }
 
-/*Actividades de Verano*/
-.verano-Banner {
-  background-image: url(../media/los-lagos-chiloe.jpg);
-  height: 500px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/*Actividades*/
+.titulo-actividades {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
 }
 
-.verano h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 1.55rem;
-  margin-bottom: 15px;
-  font-weight: 650;
+.tarjeta-actividades-container {
+  margin-bottom: 40px;
 }
-.verano img {
+
+.card-header-actividades {
+  background-color: #c1ebdd;
+  padding: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-weight: bold;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cards-actividades {
   border-radius: 10px;
-  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.388);
+  margin: 20px;
+  box-shadow: 0px 7px 20px -10px #616161;
 }
-.verano .grid-container-verano {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  column-gap: 30px;
-  row-gap: 45px;
-  margin: 45px 65px 45px;
-  /* Verano flexbox */
-}
-.verano .grid-container-verano .verano1, .verano .grid-container-verano .verano2, .verano .grid-container-verano .verano3 {
+
+.card-body-actividades {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  padding: 20px;
+  text-align: center;
   align-items: center;
 }
-.verano .grid-container-verano .verano1 img, .verano .grid-container-verano .verano2 img, .verano .grid-container-verano .verano3 img {
-  width: 100%;
-  height: 100%;
+.card-body-actividades .icon {
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 0px 7px 20px -10px #616161;
+}
+.card-body-actividades p {
+  margin: 20px;
+  color: rgb(38, 38, 38);
+  text-align: justify;
+}
+.card-body-actividades .photo {
+  margin-left: 20px;
+  width: 350px;
+  max-width: 400px;
+  height: 250px;
+  border-radius: 5px;
+  box-shadow: 0px 7px 20px -10px #616161;
 }
 
-.verano .grid-container-verano .verano2 img {
-  width: 100%;
-  height: 100%;
-}
-
-.verano .grid-container-verano .verano3 img {
-  width: 100%;
-  height: 100%;
-}
-
-/*Actividades de Invierno*/
-.invierno-Banner {
+/*Parques Nacionales*/
+.parques-banner {
   background-image: url(../media/san-pedro-de-atacama-laguna-miscanti.jpg);
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  left: 200px;
-  align-items: left;
+  margin-bottom: 40px;
+}
+.parques-banner h1 {
+  margin-top: 100px;
+  font-family: "Lato", sans-serif;
+  font-size: 2.7rem;
+  margin-left: 20px;
+  color: #e0f5ee;
+  font-weight: 600;
 }
 
-.invierno h3 {
+.parques h3 {
   font-family: "Lato", sans-serif;
   font-size: 1.55rem;
   margin-bottom: 15px;
   font-weight: 650;
 }
-.invierno img {
+.parques img {
   border-radius: 10px;
-  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.388);
+  box-shadow: 0px 7px 20px -10px #616161;
 }
-.invierno .grid-container-invierno {
+.parques .grid-container-parques {
   display: grid;
-  grid-template-columns: auto auto auto;
-  grid-template-rows: auto;
-  column-gap: 30px;
-  row-gap: 45px;
-  margin: 45px 65px 45px;
-  /* Verano flexbox */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 45px 40px 45px;
 }
-.invierno .grid-container-invierno .invierno1, .invierno .grid-container-invierno .invierno2, .invierno .grid-container-invierno .invierno3 {
+.parques .grid-container-parques .parque {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
-.invierno .grid-container-invierno .invierno1 img, .invierno .grid-container-invierno .invierno2 img, .invierno .grid-container-invierno .invierno3 img {
-  width: 100%;
-  height: 100%;
-}
-
-.invierno .grid-container-invierno .invierno2 img {
-  width: 100%;
-  height: 100%;
-}
-
-.invierno .grid-container-invierno .invierno3 img {
+.parques .grid-container-parques .parque img {
   width: 100%;
   height: 100%;
 }
@@ -336,7 +331,7 @@ footer .redes {
   justify-content: center;
 }
 footer .redes h6 {
-  margin-top: -30px;
+  margin-top: -40px;
   font-size: x-large;
 }
 footer .redes img {
@@ -410,14 +405,31 @@ footer .suscripcion .footer-form #enviar {
   .section p {
     margin-left: 20px;
   }
-  /* Actividades de Verano */
-  .verano .grid-container-verano {
+  /* Actividades */
+  .card-body-actividades {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
+  .card-body-actividades .icon {
+    height: 100px;
+    width: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .card-body-actividades p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .card-body-actividades .photo {
+    height: 200px;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   /* Actividades de Invierno */
-  .invierno .grid-container-invierno {
+  .parques .grid-container-parques {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -439,6 +451,7 @@ footer .suscripcion .footer-form #enviar {
     margin-top: 25px;
   }
   footer .suscripcion {
+    margin-top: -20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -477,14 +490,31 @@ footer .suscripcion .footer-form #enviar {
   .section p {
     margin-left: 20px;
   }
-  /* Actividades de Verano */
-  .verano .grid-container-verano {
+  /* Actividades */
+  .card-body-actividades {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
+  .card-body-actividades .icon {
+    height: 100px;
+    width: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .card-body-actividades p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .card-body-actividades .photo {
+    height: 200px;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   /* Actividades de Invierno */
-  .invierno .grid-container-invierno {
+  .parques .grid-container-parques {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -506,6 +536,7 @@ footer .suscripcion .footer-form #enviar {
     margin-top: 25px;
   }
   footer .suscripcion {
+    margin-top: -20px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -540,14 +571,31 @@ footer .suscripcion .footer-form #enviar {
   .section p {
     margin-right: 20px;
   }
-  /* Actividades de Verano */
-  .verano .grid-container-verano {
+  /* Actividades */
+  .card-body-actividades {
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
   }
+  .card-body-actividades .icon {
+    height: 100px;
+    width: 200px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .card-body-actividades p {
+    margin-top: 10px;
+    text-align: justify;
+  }
+  .card-body-actividades .photo {
+    height: 200px;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
   /* Actividades de Invierno */
-  .invierno .grid-container-invierno {
+  .parques .grid-container-parques {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -564,7 +612,7 @@ footer .suscripcion .footer-form #enviar {
     margin-left: 20px;
   }
   footer .redes {
-    margin-top: -90px;
+    margin-top: -70px;
     margin-left: 100px;
   }
   footer .redes img {

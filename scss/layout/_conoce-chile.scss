@@ -1,4 +1,5 @@
 @import '../base/fonts';
+@import '../utilities/variables';
 
 /*Conoce Chile*/
 .conoce-chile-banner {
@@ -36,10 +37,10 @@
 
 .section-container {
     color: $principal-color;
-    background-color: #e0f5ee;
+    background-color: $color-fondo;
     margin-left: 300px;
     margin-right: 100px;
-    margin-bottom: 30px;
+    margin-bottom: $margin-bottom-footer;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
