@@ -101,23 +101,32 @@ header a.nav-link {
 .recomendaciones a.nav-link .active {
   color: rgb(38, 38, 38);
 }
-.recomendaciones .cards {
-  margin-bottom: 40px;
+
+.imperdibles h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.55rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.imperdibles img {
+  border-radius: 10px;
+  box-shadow: 0px 7px 20px -10px #616161;
+}
+
+.grid-container-imperdibles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 15px;
-  margin-right: 15px;
+  margin: 45px 40px 45px;
 }
-.recomendaciones .cards .card img {
+.grid-container-imperdibles .imperdibles-photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-container-imperdibles .imperdibles-photo img {
   width: 100%;
   height: 100%;
-}
-.recomendaciones .cards .card h5 {
-  margin-top: 20px;
-  margin-left: 5px;
-  margin-bottom: 20px;
-  font-weight: 600;
-  font-size: 1.5rem;
 }
 
 /*Conoce Chile*/
@@ -236,46 +245,58 @@ header a.nav-link {
 
 /*Parques Nacionales*/
 .parques-banner {
-  background-image: url(../media/parque-nacional-nevado-tres-cruces.jpg);
+  background-image: url(../media/los-lagos-saltos-de-petrohue.jpg);
   height: 400px;
   background-size: cover;
   background-repeat: no-repeat;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   margin-bottom: 40px;
 }
 .parques-banner h1 {
-  margin-top: 100px;
   font-family: "Lato", sans-serif;
   font-size: 2.7rem;
-  margin-left: 20px;
   color: rgb(38, 38, 38);
   font-weight: 600;
+  background-color: rgba(220, 217, 217, 0.788);
+  width: 41%;
+  padding: 10px 20px;
+  border-radius: 15px;
+  box-shadow: 0px 7px 20px -10px #616161;
+  margin-left: 20px;
+  margin-bottom: 60px;
 }
 
-.parques h3 {
-  font-family: "Lato", sans-serif;
-  font-size: 1.55rem;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-.parques img {
-  border-radius: 10px;
-  box-shadow: 0px 7px 20px -10px #616161;
-}
-.parques .grid-container-parques {
+.cards {
+  margin-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 15px;
-  margin: 45px 40px 45px;
+  gap: 16px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-.parques .grid-container-parques .parque {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.parques .grid-container-parques .parque img {
+.cards .card img {
   width: 100%;
-  height: 100%;
+  height: 40%;
+}
+.cards .card h5 {
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.cards .card p {
+  margin: 8px;
+  color: rgb(38, 38, 38);
+  text-align: left;
+}
+
+.absolute {
+  position: relative;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 /*contacto.html*/
@@ -374,6 +395,12 @@ footer .suscripcion .footer-form #enviar {
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
+  /* Imperdibles Home */
+  .imperdibles .grid-container-imperdibles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   /*Conoce Chile */
   .conoce-chile-banner div h1 {
     font-size: 2.8rem;
@@ -428,11 +455,19 @@ footer .suscripcion .footer-form #enviar {
     margin-left: 20px;
     margin-right: 20px;
   }
-  /* Actividades de Invierno */
-  .parques .grid-container-parques {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  /*Parques Nacionales*/
+  .parques-banner h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 2.7rem;
+    color: rgb(38, 38, 38);
+    font-weight: 600;
+    background-color: rgba(220, 217, 217, 0.788);
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 7px 20px -10px #616161;
+    margin-left: 20px;
+    margin-bottom: 60px;
   }
   /*Footer*/
   footer .container-footer {
@@ -459,6 +494,12 @@ footer .suscripcion .footer-form #enviar {
 }
 /* Tablet */
 @media only screen and (min-width: 481px) and (max-width: 766px) {
+  /* Imperdibles Home */
+  .imperdibles .grid-container-imperdibles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   /*Conoce Chile */
   .conoce-chile-banner div h1 {
     font-size: 2.7rem;
@@ -513,11 +554,19 @@ footer .suscripcion .footer-form #enviar {
     margin-left: 20px;
     margin-right: 20px;
   }
-  /* Actividades de Invierno */
-  .parques .grid-container-parques {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  /*Parques Nacionales*/
+  .parques-banner h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 2.7rem;
+    color: rgb(38, 38, 38);
+    font-weight: 600;
+    background-color: rgba(220, 217, 217, 0.788);
+    width: 50%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 7px 20px -10px #616161;
+    margin-left: 20px;
+    margin-bottom: 60px;
   }
   /*Footer*/
   footer .container-footer {
@@ -543,6 +592,12 @@ footer .suscripcion .footer-form #enviar {
   }
 }
 @media only screen and (min-width: 767px) and (max-width: 1023px) {
+  /* Imperdibles Home */
+  .imperdibles .grid-container-imperdibles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   /*Conoce Chile */
   .section-container {
     margin-left: 100px;
@@ -594,11 +649,19 @@ footer .suscripcion .footer-form #enviar {
     margin-left: 20px;
     margin-right: 20px;
   }
-  /* Actividades de Invierno */
-  .parques .grid-container-parques {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  /*Parques Nacionales*/
+  .parques-banner h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 2.7rem;
+    color: rgb(38, 38, 38);
+    font-weight: 600;
+    background-color: rgba(220, 217, 217, 0.788);
+    width: 60%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: 0px 7px 20px -10px #616161;
+    margin-left: 20px;
+    margin-bottom: 60px;
   }
   /*Footer*/
   footer .container-footer {

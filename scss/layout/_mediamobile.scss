@@ -3,7 +3,14 @@
 
 /* Mobile */
 @media only screen and (max-width: 480px) {
-/*Conoce Chile */
+    /* Imperdibles Home */
+    .imperdibles .grid-container-imperdibles {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+  /*Conoce Chile */
   .conoce-chile-banner {
     div {
       h1 {
@@ -64,12 +71,23 @@
     margin-right: 20px;
   }
 }
-    /* Actividades de Invierno */
-    .parques .grid-container-parques {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
+
+  /*Parques Nacionales*/
+  .parques-banner {
+  h1{
+    font-family: $font-family;
+    font-size: 2.7rem;
+    color: $principal-color;
+    font-weight: $font-1;
+    background-color: $background-banner;
+    width: 70%;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow: $box-shadow;
+    margin-left: 20px;
+    margin-bottom: 60px;
+  }
+}
 
 /*Footer*/
  footer {
